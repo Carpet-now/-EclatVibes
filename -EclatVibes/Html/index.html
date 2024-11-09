@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EclatVibes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos básicos para la navegación */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación superior -->
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#reviews">Opiniones de Clientes</a></li>
+                <li><a href="register.html">Registro</a></li>
+                <li><a href="login.html" id="loginNav">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner de la página -->
+        <div class="banner">
+            <h1>EclatVibes</h1>
+            <img src="logo.png" alt="Logo EclatVibes" class="logo">
+        </div>
+    </header>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="about" id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>EclatVibes es una empresa dedicada a ofrecer moda contemporánea con un enfoque en el estilo, la sostenibilidad y la innovación. Nos apasiona crear prendas que fusionen diseño vanguardista con materiales respetuosos con el medio ambiente, asegurando que cada pieza no solo destaque por su estética, sino también por su responsabilidad social. Creemos en la moda como una expresión personal y un vehículo para el cambio positivo, y estamos comprometidos a proporcionar productos de alta calidad que reflejen tanto las últimas tendencias como nuestros valores de sostenibilidad. En EclatVibes, nos esforzamos por inspirar a nuestros clientes a vestir con propósito y conciencia.</p>
+        <img src="empresa.jpg" alt="Imagen de la empresa">
+    </section>
+
+    <!-- Sección Servicios -->
+    <section class="services" id="services">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Ropa personalizada – Desde $50
+                Ofrecemos camisas, pantalones y otras prendas personalizadas según tus preferencias. Ya sea que busques un diseño único, ajustes específicos o materiales especiales, nuestro equipo se encargará de crear piezas exclusivas que se adapten a tu estilo. Personaliza tu ropa para reflejar tu personalidad y destacar en cualquier ocasión.</li>
+            <li>Camisas, gorras y zapatos de todo tipo
+                Disponemos de una variada selección de camisas, gorras y zapatos de diversas marcas y estilos. Ya sea que busques algo casual, formal o deportivo, tenemos opciones para todos los gustos y preferencias. También ofrecemos la posibilidad de adquirir productos de otras marcas que se alineen con tu estilo.</li>
+            <li>Accesorios exclusivos – Desde $30
+                Encuentra una amplia variedad de accesorios, incluyendo gorras, cinturones y bufandas, diseñados para complementar tu vestuario. Nuestros accesorios son cuidadosamente seleccionados para ofrecerte productos únicos y de alta calidad que añaden el toque final perfecto a cualquier look.</li>
+        </ul>
+    </section>
+
+    <!-- Botón oculto para mostrar productos -->
+    <button id="viewProducts" style="display: none;">Ver Ropa Masculina</button>
+
+
+    <!-- Modal para mostrar productos -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Nuestros Productos Masculinos</h2>
+            <div class="product-category">
+                <h3>Camisas</h3>
+                <img src="camisa1.jpg" alt="Camisa 1">
+                <img src="camisa2.jpg" alt="Camisa 2">
+                <img src="camisa3.jpg" alt="Camisa 3">
+            </div>
+            <div class="product-category">
+                <h3>Zapatos</h3>
+                <img src="zapato1.jpg" alt="Zapato 1">
+                <img src="zapato2.jpg" alt="Zapato 2">
+                <img src="zapato3.jpg" alt="Zapato 3">
+                <img src="zapato4.jpg" alt="Zapato 4">
+            </div>
+            <div class="product-category">
+                <h3>Gorras</h3>
+                <img src="gorra1.jpg" alt="Gorra 1">
+                <img src="gorra2.jpg" alt="Gorra 2">
+                <img src="gorra3.jpg" alt="Gorra 3">
+                <img src="gorra4.jpg" alt="Gorra 4">
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón oculto para mostrar productos -->
+    <button id="viewProducts" style="display: none;">Ver Ropa Fememina</button>
+
+<!-- Modal para mostrar productos femeninos -->
+<div id="womenProductModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeWomenModal">&times;</span>
+        <h2>Nuestros Productos Femeninos</h2>
+        <div class="product-category">
+            <h3>Blusas</h3>
+            <img src="blusa1.jpg" alt="Blusa 1">
+            <img src="blusa2.jpg" alt="Blusa 2">
+        </div>
+        <div class="product-category">
+            <h3>Vestidos</h3>
+            <img src="vestido1.jpg" alt="Vestido 1">
+            <img src="vestido2.jpg" alt="Vestido 2">
+        </div>
+        <div class="product-category">
+            <h3>Zapatos Femeninos</h3>
+            <img src="zapato_femenino1.jpg" alt="Zapato Femenino 1">
+            <img src="zapato_femenino2.jpg" alt="Zapato Femenino 2">
+        </div>
+    </div>
+</div>
+    
+    <!-- Sección Opiniones de Clientes -->
+    <section class="reviews" id="reviews">
+        <h2>Opiniones de Clientes</h2>
+
+        <form id="reviewForm">
+            <textarea id="reviewText" rows="4" placeholder="Escribe tu opinión aquí..."></textarea>
+            <button type="submit">Enviar Opinión</button>
+        </form>
+        <div id="reviewList"></div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Síguenos en nuestras redes sociales</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+header {
+    background-color: #f1e6d1; /* Beige suave */
+    color: #3d2b20; /* Color del texto oscuro */
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Para posicionar el logo */
+}
+
+.logo {
+    position: absolute; /* Posicionar el logo en la parte derecha */
+    top: 50px; /* Espaciado desde la parte superior */
+    right: 60px; /* Espaciado desde la derecha */
+    height: 90px; /* Ajustar altura del logo */
+}
+
+.product-gallery {
+    display: flex; /* Usar flexbox para el diseño */
+    flex-direction: column;
+    margin: 20px;
+}
+
+.product-category {
+    margin: 20px 0; /* Espaciado entre categorías */
+}
+
+.product-category img {
+    max-width: 100%; /* Imágenes responsivas */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px 0; /* Espacio entre imágenes */
+}
+
+.reviews {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para secciones */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#reviewText {
+    width: 100%; /* Ancho total del textarea */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#reviewList {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+#reviewList p {
+    background-color: #f1e6d1; /* Fondo beige para reseñas */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0; /* Espaciado entre reseñas */
+}
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Queda en la pantalla */
+    z-index: 1; /* Enfrente de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho total */
+    height: 100%; /* Alto total */
+    overflow: auto; /* Desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+}
+
+.modal-content {
+    background-color: #f9f3eb; /* Fondo del modal */
+    margin: 15% auto; /* Margen superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido del modal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa; /* Color del botón de cerrar */
+    float: right; /* A la derecha */
+    font-size: 28px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Color al pasar el ratón */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Mano al pasar el ratón */
+} 
+
